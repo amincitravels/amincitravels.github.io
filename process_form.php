@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Send the email
     mail($to, $subject, $email_message, $headers);
 
-    // Redirect back to the thank you page or your homepage
+    // Redirect to the thank you page
     header("Location: thank_you.html");
     exit();
 }
