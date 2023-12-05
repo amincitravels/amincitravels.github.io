@@ -5,33 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aminci Travels</title>
   <style>
-    body, html {
-      height: 100%;
+    body {
+      font-family: 'Arial', sans-serif;
       margin: 0;
-      font-family: "Courier New", Courier, monospace;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .bgimg {
-      background-image: url('forestbridge.jpg');
-      height: 100%;
-      background-position: center;
-      background-size: cover;
-      position: relative;
+    header {
+      background-color: #333;
       color: white;
+      padding: 15px;
       text-align: center;
     }
 
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    .main-content {
+      background-image: url('forestbridge.jpg');
+      background-size: cover;
+      color: white;
+      padding: 50px;
+      text-align: center;
     }
 
     h1 {
@@ -39,54 +32,69 @@
       margin-bottom: 20px;
     }
 
-    hr {
-      width: 50%;
-      border: 1px solid white;
-    }
-
     p {
       font-size: 1.5em;
-      margin-top: 20px;
+      margin-bottom: 30px;
     }
 
-    .contact-info {
-      margin-top: 50px;
+    .contact-section {
+      background-color: #f4f4f4;
+      padding: 50px;
+      text-align: center;
     }
 
-    .bottomleft {
-      position: absolute;
-      bottom: 10px;
-      left: 16px;
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
-<div class="bgimg">
-  <div class="overlay">
+  <header>
     <h1>Aminci Travels</h1>
-    <hr>
-    <p>Contact Us</p>
-    <!-- Add the Google Map location here -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.8267111618197!2d76.2215726138242!3d10.976449158473546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7cddea93abed5%3A0xd886d9c0933a9247!2sAMINCI%20TOURS%20AND%20TRAVELS%20PRIVATE%20LIMITED!5e0!3m2!1sen!2ssa!4v1677526655177!5m2!1sen!2ssa" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <div class="contact-info">
-      <p><a href="https://api.whatsapp.com/send?phone=+918086531111">+91 80865 31111 (WhatsApp)</a></p>
-    </div>
-  </div>
-  <div class="bottomleft">
-    <!-- Additional information or links can be added here -->
-  </div>
-</div>
+    <p>Your Gateway to Memorable Journeys</p>
+  </header>
 
-<script type="text/javascript">
-  window.__ET = { "partnerId": "a5cvo1ankp7l9dwu"};
-  var s = document.createElement('script');
-  s.type = 'text/javascript';
-  s.async = true;
-  s.src = 'https://assets.eddyai.com/widget.min.js';
-  var x = document.getElementsByTagName('script')[0];
-  x.parentNode.insertBefore(s, x);
-</script>
+  <div class="main-content">
+    <h1>Explore the World with Aminci Travels</h1>
+    <p>Discover amazing destinations and plan your dream vacation with us.</p>
+  </div>
+
+  <div class="contact-section">
+    <h1>Contact Us</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
 </body>
 </html>
-
